@@ -4,7 +4,7 @@
     "name": "Tab Saver",
     "action": {
         "default_popup": "index.html",
-        "default_icon": "favicon.png"
+        "default_icon": "icon16.png"
     },
     "icons": {
         "16": "icon16.png",
