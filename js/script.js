@@ -22,7 +22,17 @@ saveInputBtn.addEventListener("click", function(){
 
 deleteBtn.addEventListener("click", function(){
     myTabs = []
+    localStorage.clear()
     renderTabs()
+})
+
+saveTabBtn.addEventListener("click", function(){
+    chrome.tabs.query({active: true, currentWindow: true}, function(tabs){
+        myTabs.push(tabs[0].url)
+        localStorage.setItem("myTabs", JSON.stringify(myTabs) )
+        renderTabs()
+        console.log(tabs)
+    })
 })
 
 function renderTabs(){
