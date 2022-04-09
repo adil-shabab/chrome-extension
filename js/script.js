@@ -16,7 +16,7 @@ function renderTabs(){
     for(let i=0; i < myTabs.length; i++){
         listItems += `
         <li>
-            <a target='_blank' href"${myTabs[i]}">
+            <a target='_blank' href='${myTabs[i]}'>
                 ${myTabs[i]}
             </a>
         </li>
@@ -26,6 +26,3 @@ function renderTabs(){
 }
 
 
-
-
-// console.log(listItems)

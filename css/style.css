@@ -24,3 +24,8 @@ button{
     background: white;
     color: rgb(108, 148, 249);
 }
+
+li a{
+    color: rgb(108, 148, 249);
+    font-size: 19px;
+}
