@@ -1,0 +1,12 @@
+{
+    "manifest_version": 3,
+    "version": "1.0",
+    "name": "Tab Saver",
+    "action": {
+        "default_popup": "index.html",
+        "default_icon": "favicon.png"
+    },
+    "permission": [
+        "tabs"
+    ]
+}
