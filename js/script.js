@@ -5,9 +5,17 @@ const saveTabBtn = document.getElementById('tab-btn')
 const deleteBtn = document.getElementById('dlt-btn')
 let ulEl = document.getElementById('ul-el')
 
+let tabsFromLocalStorage = JSON.parse(localStorage.getItem("myTabs"))
+if(tabsFromLocalStorage){
+    myTabs = tabsFromLocalStorage
+    renderTabs()
+}
+
+
 saveInputBtn.addEventListener("click", function(){
     myTabs.push(inputEl.value)
     inputEl.value = ""
+    localStorage.setItem("myTabs", JSON.stringify(myTabs))
     inputEl.focus()
     renderTabs()
 })
