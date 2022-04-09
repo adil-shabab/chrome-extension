@@ -8,6 +8,12 @@ let ulEl = document.getElementById('ul-el')
 saveInputBtn.addEventListener("click", function(){
     myTabs.push(inputEl.value)
     inputEl.value = ""
+    inputEl.focus()
+    renderTabs()
+})
+
+deleteBtn.addEventListener("click", function(){
+    myTabs = []
     renderTabs()
 })
 
@@ -24,5 +30,8 @@ function renderTabs(){
     }
     ulEl.innerHTML = listItems
 }
+
+
+
 
 
